@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> Seminar Registration Form</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<form action="#" id="registration">
+		<h1>Seminar Registration Form</h1>
+<hr>
+		<p>
+			<label for="username">Name:</label>
+			<input type="text" id="username" name="username" />
+		</p>
+
+		<p>
+			<label for="password1">Password:</label>
+			<input type="password" id="password1" name="password1" />
+		</p>
+
+		<p>
+			<label for="password2">Confirm Password:</label>
+			<input type="password" id="password2" name="password2" />
+		</p>
+		<p class="pgl"><label class="gl" for="gender">Gender</label></p>
+		<p >
+			<input type="radio" id="genderM" name="gender" value="male" />
+			<label class="gmfl" for="genderM">Male</label>
+		
+
+			<input type="radio" id="genderF" name="gender" value="female" />
+			<label class="gmfl" for="genderF">Female</label>
+		</p>
+
+		<p>
+			<label for="number">Mobile Number:</label>
+			<input type="tel" id="number" name="number" onkeypress="allowNumbersOnly(event)"/>
+		</p>
+
+		<p>
+			<label for="email">Email Address:</label>
+			<input type="email" id="email" name="email" onkeyup="ValidateEmail();" />
+			<span id="lblError" style="color: red"></span>
+		</p>
+
+  
+  <p>
+  	<p>
+			<label for="address">Address</label>
+			<textarea name="address" id="address" cols="30" rows="5"></textarea>
+		</p>
+    <label for="continent">Your Continent</label>
+    <select name="continent" id="continent">
+      <option value="">Choose Your Continent</option>
+      <option value="africa">Africa</option>
+      <option value="northamerica">North America</option>
+      <option value="southamerica">South America</option>
+      <option value="antarctica">Antarctica</option>
+      <option value="asia">Asia</option>
+      <option value="australia">Australia</option>
+      <option value="europe">Europe</option>
+    </select>
+  </p>
+ 		 
+
+		<p>
+			<label for="desc">Describe Seminar</label>
+			<textarea name="description" id="desc" cols="30" rows="10"></textarea>
+		</p>
+	<p>
+		<input class="pcl" type="checkbox" title="Privacy Policy" name="agree" id="agree" value="1"/>
+	 <label class="pl" for="agree">I agree to the terms and conditions</label>
+	 <span id="lblError2" style="color: red"></span>
+	
+	</p>
+  
+  <p class="pp"> In order to exercise your rights in relation to the processing of your personal data, please contact us in one of the methods described in Article 10. We will provide information on action taken based on your requests, in relation to your rights described in Article 7, within one month of the receipt of the request. That period may be extended by two further months where necessary, taking into account the complexity and number of the requests. In this case, you will be informed of any such extension within one month of receipt of your request, together with the reasons for the delay.</p>
+  <p class="pp"> This Privacy Policy You have the right to lodge a complaint with the Bulgarian Commission for Protection of Personal Data if you consider that we have infringed the GDPR in processing of your personal data.
+  </p>
+  <p class="pp">By using the Services, you explicitly consent to such use of your information and agree to the terms of this Privacy Policy.</p>
+  
+  
+  </div>
+		
+
+<div class="center">
+    <div id="captchaBackground">
+      <span id="captcha">captcha text</span>
+      <input id="textBox" type="text" name="text">
+      <div id="buttons">
+        <input class="subbutton" id="csubmit" type="submit">
+        <button class="refbutton" id="refresh" type="submit">Refresh</button>
+      </div> 
+      <span id="output"></span>
+    </div>
+  </div>
+
+		<p>
+			<button class="center" type="submit" id="register">Register!</button>
+		</p>
+
+	</form>
+
+	<div id="errorMessages"></div>
+<script  src="./js.js"></script>
+
+</body>
+</html>

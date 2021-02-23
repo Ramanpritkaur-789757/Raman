@@ -1,0 +1,243 @@
+
+html,
+body,
+div,
+span,
+p,
+address,
+fieldset,
+form,
+label{
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background:  whitesmoke;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+#registration {
+  width: 480px;
+  background: #fff;
+  padding: 1em;
+  margin: 2em auto;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 1em;
+  color: darkblue;
+}
+
+p {
+  padding: 0.5em 0;
+}
+
+p:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+label {
+  display: inline-block;
+  width: 40%;
+  color: darkblue;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="email"],
+input[type="checkbox"],
+textarea,
+select {
+  border: none;
+  padding: 0.5em;
+  background-color: #ecf0f1;
+  font: inherit;
+  float: right;
+  width: 50%;
+}
+
+textarea {
+  max-width: 50%;
+  min-width: 50%;
+}
+
+button {
+  border: none;
+  background: rosybrown;
+  width: 100%;
+  padding: 1em 0;
+  font: inherit;
+  color: #ecf0f1;
+  font-weight: 400;
+}
+
+#errorMessages {
+  width: 480px;
+  margin: 2em auto;
+  background-color: #ecf0f1;
+  overflow: hidden;
+}
+
+#errorMessages li {
+  padding: 1em;
+  background-color: #e74c3c;
+  color: #ecf0f1;
+  font-weight: 400;
+  margin: 0 1em;
+  margin-bottom: 1em;
+}
+
+#errorMessages li:first-child {
+  margin-top: 1em;
+}
+.gl{
+	float: left !important;
+}
+.gmfl{
+	width: 15%  !important;
+}
+
+.pgl{
+	    width: 50% !important;
+    float: left !important;
+}
+.pcl{
+	    width: 10% !important;
+    float: left !important;
+}
+.pl{
+	width: 80% !important;
+}
+
+/*Captcha Css*/
+.refbutton{
+        background: green !important;
+        border: 2px solid #0072ff !important;
+        border-radius: 4px !important;
+        color: #fff !important;
+        font-size: 10px !important;
+        padding: 5px !important;
+        margin-top: 6px !important;
+        width: auto!important;
+
+}
+
+.subbutton{
+        background: chocolate !important;
+        border: 2px solid #0072ff !important;
+        border-radius: 4px !important;
+        color: #fff !important;
+        font-size: 9px !important;
+        padding: 5px !important;
+        margin-top: 6px !important;
+        width: auto!important;
+
+}
+
+#captchaBackground {
+  height: 120px;
+  width: 150px;
+  background-color:#3498db;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  display: inline-block;
+    padding: 7px 15px;
+    font-size: 18px;
+    margin: 5px 0 3px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+}
+#captcha {
+  margin-bottom: 0em;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+.center {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+#submit {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+#textBox {
+  height: 20px;
+  width: 80px;
+}
+.redText {
+  color: red;
+  font-weight: bold;
+  font-size: 10px;
+}
+.greenText {
+  color: #1a3815;
+  font-weight: bold;
+   font-size: 10px;
+
+}
+.pp
+{
+	text-align: justify;
+	font-size: 12px;
+}
